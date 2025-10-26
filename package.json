@@ -23,7 +23,7 @@
     "prepare": "husky install",
     "lint-staged": "lint-staged",
     "gh-pages": "gh-pages -d public",
-    "deploy": "gatsby build &&  gh-pages"
+    "deploy": "gatsby build && gh-pages -d public -b gh-pages"
   },
   "lint-staged": {
     "*.{js,css,json,md}": [

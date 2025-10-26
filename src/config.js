@@ -1,5 +1,5 @@
 module.exports = {
-  email: 'S.SADEGHI.RONIZI@OUTLOOK.COM',
+  email: 'SR.SafOuRaA@gmail.com',
 
   socialMedia: [
     {
@@ -11,7 +11,6 @@ module.exports = {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/SafouraSadeghiRonizi',
     },
-
   ],
 
   navLinks: [
