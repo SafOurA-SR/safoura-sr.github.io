@@ -125,61 +125,62 @@ const Fertigkeit = () => {
     sr.reveal(revealContainer.current, srConfig());
   }, []);
 
-  const skills = ['Farsi(Native)','English(Proficient)', 'German(Fluent)','Japanese(Conversational)',, 'Spanish, Dutch, and Russian are loading ...' ]; 
+  const skills = [
+    'Farsi(Native)',
+    'English(Proficient)',
+    'German(Fluent)',
+    'Japanese(Conversational)',
+    'Chinese, Spanish and Russian are loading ...',
+  ];
 
-  
   return (
     <StyledAboutSection id="skills" ref={revealContainer}>
       <h2 className="numbered-heading">Skills Summary</h2>
 
       <div className="title">
         <StyledText>
-          <div>                   
-            <p> ✓  Programming:   Python, Matlab, Fortran, C, C++</p>
+          <div>
+            <p> ✓ Programming: Python, Matlab, Fortran, C, C++</p>
           </div>
-          <div>                   
-            <p> ✓  Subroutine:    UMAT, UEL, DLoad</p>
+          <div>
+            <p> ✓ Subroutine: UMAT, UEL, DLoad</p>
           </div>
-          <div>                   
-            <p> ✓  Tools:         Solidworks, AutoCAD, Abaqus, GIT, Comsol, Ansys, Proteus, Simulink, SAM, PV-Elite</p>
+          <div>
+            <p> ✓ Tools: Solidworks, AutoCAD, Abaqus, GIT, Comsol, Simulink, PV-Elite</p>
           </div>
-          <div>                   
-            <p> ✓  Soft Skills:   Critical thinking, Systematic thinking, Project management, Problem Solvin</p>
+          <div>
+            <p>
+              {' '}
+              ✓ Soft Skills: Critical thinking, Systematic thinking, Project management, Problem
+              Solvin
+            </p>
           </div>
-          <div>                   
-            <p> ✓  Language:      </p>
+          <div>
+            <p> ✓ Language: </p>
           </div>
-          
         </StyledText>
-        </div>
+      </div>
 
+      <div className="inner">
+        <StyledText>
+          <ul className="skills-list">
+            {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
+          </ul>
+        </StyledText>
 
-        <div className="inner">
-          <StyledText>
-             
-               <ul className="skills-list">
-               {skills && skills.map((skill, i) => <li key={i}>{skill}</li>)}
-                </ul>
-           </StyledText>
-
-          <StyledPic>
-             <div className="wrapper">
-                <StaticImage
-                  lassName="img"
-                  src=""
-                  width={500}
-                 quality={95}
-                    formats={['AUTO', 'WEBP', 'AVIF']}
-                     alt="Headshot"
-                      />
-               </div>
-           </StyledPic>
-</div>
-
-      
-      
-
-
+        <StyledPic>
+          <div className="wrapper">
+            <StaticImage
+              lassName="img"
+              src=""
+              width={500}
+              quality={95}
+              formats={['AUTO', 'WEBP', 'AVIF']}
+              alt="Headshot"
+            />
+          </div>
+        </StyledPic>
+      </div>
     </StyledAboutSection>
   );
 };
