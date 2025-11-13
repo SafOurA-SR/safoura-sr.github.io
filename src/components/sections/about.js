@@ -126,7 +126,7 @@ const About = () => {
   }, []);
 
   const skills = ['Smart Material', 'Additive Manufacturing', 'Soft-Robotic','Dynamics & Vibrations', 'Computational Mechanics',
-    'Fluid-Structure Interaction', 'AI']; 
+    , 'MEMS & NEMS','Fluid-Structure Interaction', 'AI']; 
 
   return (
     <StyledAboutSection id="about" ref={revealContainer}>
