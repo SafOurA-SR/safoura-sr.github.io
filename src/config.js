@@ -11,6 +11,11 @@ module.exports = {
       name: 'Linkedin',
       url: 'https://www.linkedin.com/in/SafouraSadeghiRonizi',
     },
+
+    {
+      name: 'Google Scholar',
+      url: 'https://scholar.google.com/citations?user=2m1MBVcAAAAJ&hl=en',
+    },
   ],
 
   navLinks: [
